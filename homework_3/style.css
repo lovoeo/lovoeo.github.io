@@ -1,0 +1,54 @@
+.test{
+	width:100px;height:100px;background-color:gold;
+	position:absolute;left:50px;top:50px;opacity:0.5;
+}
+
+.title{
+	font-size:36px;font-weight:bold;
+	text-align:center;
+}
+
+.ment-desktop{display:block;}
+.menu-mobile{display:none;}
+
+.frame{
+	width:1200px;margin:0px auto;
+	text-align:center;
+}
+
+.box{
+	width:260px;margin:10px;
+	display:inline-block;vertical-align:top;
+	background-color:#ffcccc;
+}
+
+/* 500px ~ 1200px 平板*/
+@media (max-width:1200px){
+	.frame{
+		width:100%;
+	}
+	.box{
+		width:45%;
+	}
+}
+
+/* 0 ~ 500px 手機*/
+@media (max-width:500px){
+	/* 螢幕尺寸小於 500px 的時候，套用這個區塊的設定 */
+	.title{
+		font-size:20px;
+	}
+	.menu-desktop{display:none;}
+	.menu-mobile{display:block;}
+	.frame{
+		width:100%;
+	}
+	.box{
+		width:90%;
+	}
+}
+
+/*
+320px -----> 500px -----> 1000px -----> 1920px
+手機                      電腦螢幕
+*/
