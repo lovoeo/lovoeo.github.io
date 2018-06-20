@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="utf-8"></meta>
+<title>JavaScript</title>
+<script>
+// 算術運算 +, -, *, /
+// 指定運算 =, +=, -=, *=, /= 
+// 單元運算 ++, --, !(反運算)
+// 比較運算 >, <, ==(一般相等), >=, <=, ===(嚴格相等)
+// 常數：不能改變資料的變數 const t=5;
+function change(){
+	//window.document.body.innerHTML="Hello World";
+	var spanObj=window.document.getElementById("emotion");
+	spanObj.innerHTML="bad";
+	spanObj.style.color="gold";
+	spanObj.style.fontWeight="bold";
+	spanObj.style.display="none";
+}
+
+let n=0;
+while(n<5){
+	console.log(n);
+	n++;
+}
+</script>
+</head>
+<body>
+	<div>
+		Today is a <span id="emotion">good</span> day. Let's go to movie.
+	</div>
+	<button onclick="change();">Change</button>
+</body>
+</html>
